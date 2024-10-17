@@ -1,0 +1,239 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+body {
+    background-image: url('bg\ image1.jpeg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: rgb(6, 0, 0); /* Adjust text color for better visibility */
+}
+header {
+    background-color: #ff4081;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 15px;
+    text-align: center;
+    background-color: #303030;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Slideshow Styles */
+#slideshow {
+    width: 80%; /* Set the width to 80% of the page */
+    max-width: 800px; /* Limit the maximum width for larger screens */
+    margin: 0 auto; /* Center the slideshow */
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+    border-radius: 10px; /* Optional: Add some rounded corners */
+}
+
+.slides img {
+    width: 100%;
+    display: none;
+    border-radius: 10px; /* Optional: Match the border radius */
+}
+
+.slides img.active {
+    display: block;
+}
+
+/* Types of Events Styles */
+.event-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.event-item {
+    position: relative;
+    width: 350px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#events h2 {
+    text-align: center;
+}
+.event-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: opacity 0.3s;
+}
+
+.event-item .event-name {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Hover Effect */
+.event-item:hover {
+    transform: scale(1.1);
+}
+
+.event-item:hover img {
+    opacity: 0.8;
+}
+
+
+/* Booking Section Styles */
+#booking {
+    text-align: center;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-button img {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.whatsapp-button:hover {
+    background-color: #1ebe57;
+}
+
+/* Contact Section Styles */
+#contact {
+    text-align: center;
+    padding: 30px;
+    background-color: #ececec;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+.contact-details p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Testimonials Section Styles */
+#testimonials {
+    text-align: center;
+    padding: 30px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.video-testimonials {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.video-item {
+    flex: 1 1 300px;
+    max-width: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.video-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Hover Effect */
+.video-item:hover {
+    transform: scale(1.05);
+}
+
+/* Social Media Section Styles */
+#social-media {
+    text-align: center;
+    padding: 30px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+.social-media-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-media-buttons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.social-media-buttons img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+
+/* Hover Effect for Social Media Icons */
+.social-media-buttons a:hover img {
+    transform: scale(1.1);
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #303030;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

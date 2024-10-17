@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Booking Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SWAMY MELODIES & MEGA EVENTS</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#booking">Booking Your Event</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Slideshow Section -->
+    <section id="slideshow">
+        <div class="slides">
+            <img src="swamy melodies.jpg" alt="Slide 1">
+            <img src="Kotigaru.png" alt="Slide 2">
+            <img src="Dupe BalaKrishna.png" alt="Slide 3">
+            <img src="event11.jpg" alt="Slide 4">
+            <img src="event22.jpg" alt="Slide 5">
+            <img src="event33.jpg" alt="Slide 6">
+            <img src="Singing.png" alt="Slide 7">
+        </div>
+    </section>
+
+    <section id="events">
+        <h2>Types of Events</h2>
+        <div class="event-list">
+            <div class="event-item" onclick="showEventDetails('singers')">
+                <img src="spbalu.jpeg" alt="Singers">
+                <div class="event-name">Singers</div>
+            </div>
+            <div class="event-item" onclick="showEventDetails('dancers')">
+                <img src="dance.jpg" alt="Dancers">
+                <div class="event-name">Dancers</div>
+            </div>
+            <div class="event-item" onclick="showEventDetails('magic-show')">
+                <img src="magic-show.jpg" alt="Magic Show">
+                <div class="event-name">Magic Show</div>
+            </div>
+            <div class="event-item" onclick="showEventDetails('anchors')">
+                <img src="anchors.jpeg" alt="Anchors">
+                <div class="event-name">Anchors</div>
+            </div>
+            <div class="event-item" onclick="showEventDetails('comedy')">
+                <img src="standupcomedy.jpeg" alt="Comedy Team">
+                <div class="event-name">Standup Comedy</div>
+            </div>
+            <div class="event-item" onclick="showEventDetails('karaoke')">
+                <img src="karaoke.jpeg" alt="Karaoke Singers">
+                <div class="event-name">Track/Karaoke Singers</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Booking Section -->
+<section id="booking">
+    <h2>Book Your Event</h2>
+    <p>Contact us to book any event. Click the button below to reach us via WhatsApp.</p>
+    <a href="https://wa.me/+919676435363" class="whatsapp-button" target="_blank">
+        <img src="whatsapp.png" alt="WhatsApp">
+        Book via WhatsApp
+    </a>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need more information, feel free to reach out.</p>
+    <div class="contact-details">
+        <p><strong>Phone:</strong> +91 9676435363, +91 9553245363</p>
+        <p><strong>Email:</strong> swamyjerripothu@gmail.com</p>
+        <p><strong>Address:</strong> Guntur, Vijayawada - India</p>
+    </div>
+</section>
+
+
+    <!-- Common Event Details Section -->
+    <section id="event-details" style="display:none;">
+        <h3 id="event-title"></h3>
+        <p id="event-description"></p>
+        <img id="event-image" src="" alt="Event Image">
+    </section>
+
+
+
+<!-- Testimonials Section -->
+<section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="video-testimonials">
+        <div class="video-item">
+            <a href="https://youtu.be/QF0m1S3SVJA?si=CNnuiPTD4bhW60CG" target="_blank">
+                <img src="Kotigaru.png" alt="Testimonial Video 1">
+            </a>
+            <div class="testimonial-name">Music Director Koti Sir & Singer Anju</div>
+        </div>
+        <div class="video-item">
+            <a href="https://youtu.be/CM5L53fNcg4?si=R6eFyo5zZZQzPGsh" target="_blank">
+                <img src="Dupe BalaKrishna.png" alt="Testimonial Video 2">
+            </a>
+            <div class="testimonial-name">Dupe Bala Krishna</div>
+        </div>
+        <div class="video-item">
+            <a href="https://youtu.be/MyhJxiKT1FQ?si=IGNa2-GHjZagNwPs" target="_blank">
+                <img src="Singing.png" alt="Testimonial Video 3">
+            </a>
+            <div class="testimonial-name">Dance & Singing </div>
+        </div>
+    </div>
+</section>
+
+<!-- Social Media Section -->
+<section id="social-media">
+    <h2>Follow Us on Social Media</h2>
+    <div class="social-media-buttons">
+        <a href="http://www.youtube.com/@swamymelodies3030" target="_blank">
+            <img src="youtube.jpeg" alt="YouTube">
+        </a>
+        <a href="https://www.facebook.com/YOUR_PAGE_LINK" target="_blank">
+            <img src="fb.jpeg" alt="Facebook">
+        </a>
+    </div>
+</section>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
